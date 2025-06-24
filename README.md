@@ -34,7 +34,7 @@ close(library)
 
 ### Available Functions
 
-- send_notification(title: DataType.String, body: DataType.String) -> DataType.void
+- `fn send_notification(title: *const c_char, body: *const c_char) -> ()`
   - description: Send system notification.
 ![notification](.github/notification.png)
 
