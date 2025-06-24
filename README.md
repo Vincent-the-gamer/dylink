@@ -9,7 +9,11 @@ Download dylib file(.dll/.dylib/.so) from release, then call function use `ffi-r
 ```ts
 import { close, DataType, load, open } from "ffi-rs"
 
-const library = "libdylink"
+// library_name, don't add suffix
+// e.g. dylink-darwin-aarch64
+const library = "library_name" 
+
+// path to library
 const path = "/path/to/.dylib or .so or .dll"
 
 open({
@@ -27,6 +31,13 @@ const send = load({
 
 close(library)
 ```
+
+### Available Functions
+
+- send_notification(title: DataType.String, body: DataType.String) -> DataType.void
+  - description: Send system notification.
+![notification](.github/notification.png)
+
 
 ## Build
 
