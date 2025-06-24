@@ -1,0 +1,7 @@
+/target
+.DS_Store
+.idea
+**/node_modules
+**/libdylink.dylib
+**/libdylink.so
+**/libdylink.dll

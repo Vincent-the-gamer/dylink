@@ -1,0 +1,11 @@
+[package]
+name = "dylink"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "dylink"
+crate-type = ["dylib"]
+
+[dependencies]
+notify-rust = "4.11.7"
